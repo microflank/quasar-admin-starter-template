@@ -1,12 +1,14 @@
 # Quasar Base Admin Template
 
 A quick starter template with the following features
-# Analytics Chart
-# Dynamic QTable with highly customized slots
-# Global Error Handler
-# Vuex Based Module
-# Internationalisation with english as base
-# Using https://api.openbrewerydb.org/breweries as base for testing
+## Features
+Analytics Chart
+Dynamic QTable with highly customized slots
+Global Error Handler
+Vuex Based Module
+Internationalisation with english as base
+Using https://api.openbrewerydb.org/breweries as base for testing
+
 
 ## Install the dependencies
 ```bash
