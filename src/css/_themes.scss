@@ -1,0 +1,40 @@
+$themes: (
+  "blue": (
+    'primary'   : #1976D2,
+    'secondary' : #26A69A,
+    'accent'    : #9C27B0,
+    'dark'      : #1D1D1D,
+    'positive'  : #21BA45,
+    'negative'  : #C10015,
+    'info'     : #31CCEC,
+    'warning'   : #F2C037,
+  ),
+  "orange": (
+    'primary'   : #cf7602,
+    'secondary' : #26A69A,
+    'accent'    : #9C27B0,
+    'dark'      : #1D1D1D,
+    'positive'  : #21BA45,
+    'negative'  : #C10015,
+    'info'     : #31CCEC,
+    'warning'   : #F2C037,
+  ),
+);
+
+
+@each $theme, $colors in $themes {
+    [data-theme="#{$theme}"] {
+        @each $name, $color in $colors {
+            .bg-#{$name}{
+                background: $color !important;
+            }
+            .text-#{$name} {
+                color:$color !important;
+            }              
+        }
+        //quasar component override
+        .q-field__control, .q-item-active {
+            color: map-get($colors, 'primary') !important;
+        }
+    }
+}

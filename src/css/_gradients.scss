@@ -1,0 +1,18 @@
+// @import './quasar.variables';
+$gradients: (
+    'indigo':('light':$indigo-9,'dark':$indigo-10),
+    'blue':('light':$blue-9,'dark':$blue-10),
+    'purple':('light':$purple-9,'dark':$purple-10),
+    'yellow':('light':$yellow-9,'dark':$yellow-10),
+    'amber':('light':$amber-9,'dark':$amber-10),
+    'green':('light':$green-9,'dark':$green-10),
+    'red':('light':$red-9,'dark':$red-10),
+    'orange':('light':$orange-9,'dark':$orange-10),
+    'light-blue':('light':$light-blue-9,'dark':$light-blue-10),
+);
+@each $color, $options in $gradients {
+    .bg-#{$color}-gradient{
+        background-color: map-get($options, "light");
+        background-image: linear-gradient(45deg, map-get($options, "dark") 0%, map-get($options, "light") 100%);
+  }
+}
