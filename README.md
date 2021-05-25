@@ -9,6 +9,7 @@ A quick starter template with the following features
 * Internationalisation with english as base
 * Using https://api.openbrewerydb.org/breweries as base for testing
 
+![Screenshot of the admin look and feel!](/[https://github.com/microflank/quasar-admin-starter-template/blob/main/screenshot.png ](https://github.com/microflank/quasar-admin-starter-template/blob/main/screenshot.png "Front end admin Quasar Starter Template")
 
 ## Install the dependencies
 ```bash
